@@ -1,9 +1,18 @@
 body {
   min-width: 300px;
+  font-family: 'Fjalla One', sans-serif;
+  text-align: center;
 }
+
+.jumbotron {
+  padding-top: 10px;
+  margin-top: 0px;
+  height: 90px;
+}
+
 #logo {
-  width: 50px;
-  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
 
 #result-image {
