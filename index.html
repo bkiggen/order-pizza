@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BEEP! BOOP!</title>
+  <title>Pizza Cabana</title>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.3.1.js"></script>
@@ -13,27 +13,31 @@
     <div class="container">
       <h1>Welcome to Pizza Cabana!</h1>
       <h2>Please enter your name to start building your pizza:</h2>
-      <form class="" action="index.html" method="post">
-        <input type="text" name="name" value="" placeholder="ex. Janet Reno" required>
-        <label for="size">Choose your size:</label>
-        <select class="size" name="size">
-          <option value="really-small">Really Small</option>
-          <option value="small">Small</option>
-          <option value="medium">Medium</option>
-          <option value="big">Big</option>
-          <option value="really big">Really Big</option>
-        </select>
-        <div class="toppings">
-          <label for="toppings">Choose your toppings: </label>
-          <input type="checkbox" name="toppings" value="">Extra Cheese
-          <input type="checkbox" name="toppings" value="">Pepperoni
-          <input type="checkbox" name="toppings" value="">Mushrooms
-          <input type="checkbox" name="toppings" value="">Onions
-          <input type="checkbox" name="toppings" value="">Green Peppers
-          <input type="checkbox" name="toppings" value="">
-          <input type="checkbox" name="toppings" value="">
-
+      <form class="pizza-form" action="index.html" method="post">
+        <div class="pizza-name">
+          <input type="text" id="name" value="" placeholder="ex. Janet Reno">
         </div>
+        <div class="pizza-size">
+          <label for="size">Choose your size:</label>
+          <select class="size" name="size" id="size">
+            <option value="really-small">Really Small</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="big">Big</option>
+            <option value="really big">Really Big</option>
+          </select>
+        </div>
+        <div class="pizza-toppings">
+          <label for="toppings">Choose your toppings: </label>
+          <input type="checkbox" class="toppings" value="extra-cheese">Extra Cheese
+          <input type="checkbox" class="toppings" value="pepperoni">Pepperoni
+          <input type="checkbox" class="toppings" value="bacon">Bacon
+          <input type="checkbox" class="toppings" value="mushrooms">Mushrooms
+          <input type="checkbox" class="toppings" value="onions">Onions
+          <input type="checkbox" class="toppings" value="green-peppers">Green Peppers
+          <input type="checkbox" class="toppings" value="olives">Olives
+        </div>
+        <button type="submit" id="submit">Build My Pizza!</button>
       </form>
     </div>
   </body>
