@@ -11,8 +11,8 @@
 </head>
   <body>
     <div class="container input">
-      <h1>Welcome to Pizza Cabana!</h1>
-      <h2>Please enter your name to start building your pizza:</h2>
+      <h1 class="jumbotron"><img id="logo" src="img/pizza.png" alt="pizza icon"> Welcome to Pizza Cabana!</h1>
+      <h4>Please enter your name to start building your pizza:</h4>
       <form class="pizza-form" action="index.html" method="post">
         <div class="pizza-name">
           <input type="text" id="name" value="" placeholder="ex. Janet Reno" required>
@@ -44,7 +44,7 @@
       <h2>Alright, <span id="name-output"></span>, here's your Pizza:</h2>
       <p>Size: <span id="pizza-size-output"></span></p>
       <p>Toppings: <span id="pizza-toppings-output"></span></p>
-      <img src="https://www.cicis.com/media/1176/pizza_trad_pepperonibeef.png" alt="pizza">
+      <img id="result-image" src="https://www.cicis.com/media/1176/pizza_trad_pepperonibeef.png" alt="pizza">
 
       <h2>Your total:</h2>
       <h3><span id="final-price"></span></h3>

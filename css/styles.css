@@ -1,6 +1,12 @@
+body {
+  min-width: 300px;
+}
+#logo {
+  width: 50px;
+  padding-bottom: 5px;
+}
 
-
-img {
+#result-image {
   width: 500px;
 }
 

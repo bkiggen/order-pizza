@@ -1,22 +1,20 @@
 # _{Application Name}_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _This application receives user choice for toppings and size of a pizza and outputs the pizza with total cost 8/24/18_
 
 #### By _**Ben Kiggen**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This application was designed to meet the requirements of Epicodus' week 4 independent project. It displays a form with options for a pizza. The user determines the size and toppings they want and submits. The cost of the size is added to the per-topping cost and returned to the user. _
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+*Open terminal (or git bash)
+*type $git clone http://github.com/bkiggen/order-pizza
+*open order-pizza directory
+*open index.html in your chosen web browser
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
 
 ## Specifications
 
@@ -34,14 +32,14 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_For inquiries, issues, or contributions, please contact Ben Kiggen at benkiggen@gmail.com_
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_This software was created using HTML, CSS, javascript, and jQuery_
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+MIT license
 
-Copyright (c) 2018 **_Ben Kiggen_**
+Copyright (c) 2018 Ben Kiggen, Epicodus Student
