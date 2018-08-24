@@ -1,16 +1,25 @@
 //BUSINESS LOGIC
 
 
+function Pizza(pizzaSize, pizzaToppings) {
+  this.pizzaSize = pizzaSize;
+  this.pizzaToppings = pizzaToppings;
+}
+
+
+function makePizza(pizzaSize, pizzaToppings){
+  var newPizza = new Pizza(pizzaSize, pizzaToppings);
+  console.log(newPizza);
+}
 
 
 
 
 
 
+Pizza.prototype.prize = function() {
 
-
-
-
+}
 
 
 
@@ -28,8 +37,9 @@ $(document).ready(function(){
     var pizzaToppings = $(".toppings:checkbox:checked").map(function(){
       return $(this).val();
     }).get();
+    makePizza(pizzaSize, pizzaToppings);
 
 
-    console.log(userName + " " + pizzaSize + " " + typeof pizzaToppings);
+    // console.log(userName + " " + pizzaSize + " " + typeof pizzaToppings);
   });
 });
