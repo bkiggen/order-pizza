@@ -57,3 +57,19 @@ input[type="checkbox"] {
 #result-image {
   width: 500px;
 }
+
+.really-small {
+  transform: scale(0.3);
+}
+
+.small {
+  transform: scale(0.5);
+}
+
+.medium {
+  transform: scale(0.7)
+}
+
+.big {
+  transform: scale(0.9);
+}

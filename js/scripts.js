@@ -66,20 +66,36 @@ $(document).ready(function(){
     $("#name-output").text(userName);
     $("#final-price").text("$" + pizzaObject.finalPrice);
     $("#pizza-size-output").text(pizzaObject.pizzaSize);
-    // console.log(pizzaObject);
     var toppings = pizzaObject.toppingsList();
       $("#pizza-toppings-output").text(toppings);
     if(pizzaObject.pizzaToppings.length === 0) {
       $("#pizza-toppings-output").text("None");
     };
+    switch(pizzaObject.pizzaSize){
+      case "Really Small":
+        $("#result-image").addClass("really-small");
+        break;
+      case "Small":
+        $("#result-image").addClass("small");
+        break;
+      case "Really Small":
+        $("#result-image").addClass("really-small");
+        break;
+      case "Big":
+        $("#result-image").addClass("big");
+        break;
+      case "Medium":
+        $("#result-image").addClass("medium");
+        break;
+    }
     $("#start-over").click(function(){
       location.reload();
     });
-
     $("#make-changes").click(function(){
       $(".input").fadeIn();
       $(".result").hide();
       $("#toppings-list").empty();
+      $("#result-image").removeClass("really-small small medium big")
     });
   });
 });
