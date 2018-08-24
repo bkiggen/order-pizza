@@ -6,14 +6,14 @@ body {
 
 .container {
   text-align: center;
+  max-width: 1000px;
 }
 
 .jumbotron {
-  padding-top: 10px;
-  margin-top: 0px;
-  text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  min-width: 500px;
 }
+
 
 #logo {
   padding-left: 10px;
@@ -40,6 +40,7 @@ input[type="checkbox"] {
   background-color: #dba24a;
   padding: 15px 0px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  min-width: 300px;
 }
 
 .result {
@@ -72,4 +73,29 @@ input[type="checkbox"] {
 
 .big {
   transform: scale(0.9);
+}
+
+@media screen and (max-width: 530px){
+  .body {
+    width:100%;
+    min-width: 100%;
+  }
+  .jumbotron {
+    width: 100%;
+    min-width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .pizza-toppings {
+    width: 100%;
+    min-width: 100%;
+  }
+  .conatiner {
+    width: 100%;
+    min-width: 100%;
+  }
+  #result-image {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
