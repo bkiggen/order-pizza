@@ -30,30 +30,51 @@
           </select>
         </div>
         <br>
-        <div class="pizza-toppings">
-          <label for="toppings">Choose your toppings: </label>
-          <input type="checkbox" class="toppings" value="extra-cheese">Extra Cheese
-          <input type="checkbox" class="toppings" value="pepperoni">Pepperoni
-          <input type="checkbox" class="toppings" value="bacon">Bacon
-          <input type="checkbox" class="toppings" value="mushrooms">Mushrooms
-          <input type="checkbox" class="toppings" value="onions">Onions
-          <input type="checkbox" class="toppings" value="green-peppers">Green Peppers
-          <input type="checkbox" class="toppings" value="olives">Olives
+        <div class="panel panel-warning pizza-toppings">
+          <div class="panel-title">
+            <label for="toppings" id="toppings-label">Choose your toppings: </label>
+          </div>
+          <div class="input-align">
+            <div class="">
+              <input type="checkbox" class="toppings" value="extra-cheese">Extra Cheese
+            </div>
+            <div class="">
+              <input type="checkbox" class="toppings" value="pepperoni">Pepperoni
+            </div>
+            <div class="">
+              <input type="checkbox" class="toppings" value="bacon">Bacon
+            </div>
+            <div class="">
+              <input type="checkbox" class="toppings" value="mushrooms">Mushrooms
+            </div>
+            <div class="">
+              <input type="checkbox" class="toppings" value="onions">Onions
+            </div>
+            <div class="">
+              <input type="checkbox" class="toppings" value="green-peppers">Green Peppers
+            </div>
+            <div class="">
+              <input type="checkbox" class="toppings" value="olives">Olives
+            </div>
+          </div>
         </div>
         <br>
-        <button type="submit" id="submit">Build My Pizza!</button>
+        <button type="submit" id="submit" class="btn btn-success">Build My Pizza!</button>
       </form>
     </div>
-    <div class="conatiner result">
+    <div class="container result">
       <h2>Alright, <span id="name-output"></span>, here's your Pizza:</h2>
-      <p>Size: <span id="pizza-size-output"></span></p>
-      <p>Toppings: <span id="pizza-toppings-output"></span></p>
+      <h3>Size: <span id="pizza-size-output"></span></h3>
+      <h3>Toppings: <span id="pizza-toppings-output"></span></h3>
       <img id="result-image" src="https://www.cicis.com/media/1176/pizza_trad_pepperonibeef.png" alt="pizza">
 
       <h2>Your total:</h2>
       <h3><span id="final-price"></span></h3>
-      <button type="button" id="start-over">Start Over</button>
-      <button type="button" id="make-changes">Make Changes</button>
+      <br>
+      <div class="bottom-buttons">
+        <button class="btn btn-danger"type="button" id="start-over">Start Over</button>
+        <button type="button" id="make-changes" class="btn btn-success">Make Changes</button>
+      </div>
     </div>
   </body>
 </html>

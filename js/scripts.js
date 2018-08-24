@@ -61,8 +61,8 @@ $(document).ready(function(){
     }).get();
     var pizzaObject = makePizza(pizzaSize, pizzaToppings);
     //output
-    $(".result").show();
     $(".input").hide();
+    $(".result").fadeIn();
     $("#name-output").text(userName);
     $("#final-price").text("$" + pizzaObject.finalPrice);
     $("#pizza-size-output").text(pizzaObject.pizzaSize);
@@ -77,7 +77,7 @@ $(document).ready(function(){
     });
 
     $("#make-changes").click(function(){
-      $(".input").show();
+      $(".input").fadeIn();
       $(".result").hide();
       $("#toppings-list").empty();
     });
