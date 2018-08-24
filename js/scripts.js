@@ -25,8 +25,11 @@ $(document).ready(function(){
     event.preventDefault();
     var userName = $("input#name").val();
     var pizzaSize = $("#size").val();
-    var pizzaToppings = $(".toppings:checkbox:checked").val();
+    var pizzaToppings = $(".toppings:checkbox:checked").map(function(){
+      return $(this).val();
+    }).get();
 
-    console.log(userName + " " + pizzaSize + " " + pizzaToppings);
+
+    console.log(userName + " " + pizzaSize + " " + typeof pizzaToppings);
   });
 });
