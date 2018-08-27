@@ -89,7 +89,8 @@ $(document).ready(function() {
         break;
     }
     $("#move-forward").click(function() {
-      $(".bottom-buttons")
+      $('html, body').animate({scrollTop:$('.address-input').offset().top}, 1000);
+      $(".bottom-buttons").hide();
     });
     $("#start-over").click(function() {
       location.reload();
@@ -99,6 +100,12 @@ $(document).ready(function() {
       $(".result").hide();
       $("#toppings-list").empty();
       $("#result-image").removeClass("really-small small medium big")
+    });
+    $("#pickup").click(function(){
+
+    });
+    $("#delivery").click(function(){
+
     });
   });
 });
