@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,73 +11,78 @@
   <script src="js/scripts.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
 </head>
-  <body>
-    <div class="jumbotron container">
-      <h1 class="header"><img id="logo" src="img/pizza.png" alt="pizza icon"> Welcome to Pizza Cabana!</h1>
-    </div>
-    <div class="container input">
-      <h4>Please enter your name:</h4>
-      <form class="pizza-form" action="index.html" method="post">
-        <div class="pizza-name">
-          <input type="text" id="name" value="" placeholder="ex. Janet Reno" required>
-        </div>
-        <br>
-        <div class="pizza-size">
-          <label for="size">Choose your size:</label>
-          <select class="size" name="size" id="size">
+
+<body>
+  <div class="jumbotron container">
+    <h1 class="header"><img id="logo" src="img/pizza.png" alt="pizza icon"> Welcome to Pizza Cabana!</h1>
+  </div>
+  <div class="container input">
+    <h4>Please enter your name:</h4>
+    <form class="pizza-form" action="index.html" method="post">
+      <div class="pizza-name">
+        <input type="text" id="name" value="" placeholder="ex. Janet Reno" required>
+      </div>
+      <br>
+      <div class="pizza-size">
+        <label for="size">Choose your size:</label>
+        <select class="size" name="size" id="size">
             <option value="5">Really Small($5)</option>
             <option value="7">Small($7)</option>
             <option value="9">Medium($9)</option>
             <option value="11">Big($11)</option>
             <option value="13">Really Big($13)</option>
           </select>
-        </div>
-        <br>
-        <div class="panel panel-warning pizza-toppings">
-          <div class="panel-title">
-            <label for="toppings" id="toppings-label">Choose your toppings (50¢ each): </label>
-          </div>
-          <div class="input-align">
-            <div class="">
-              <input type="checkbox" class="toppings" value="extra-cheese">Extra Cheese
-            </div>
-            <div class="">
-              <input type="checkbox" class="toppings" value="pepperoni">Pepperoni
-            </div>
-            <div class="">
-              <input type="checkbox" class="toppings" value="bacon">Bacon
-            </div>
-            <div class="">
-              <input type="checkbox" class="toppings" value="mushrooms">Mushrooms
-            </div>
-            <div class="">
-              <input type="checkbox" class="toppings" value="onions">Onions
-            </div>
-            <div class="">
-              <input type="checkbox" class="toppings" value="green-peppers">Green Peppers
-            </div>
-            <div class="">
-              <input type="checkbox" class="toppings" value="olives">Olives
-            </div>
-          </div>
-        </div>
-        <br>
-        <button type="submit" id="submit" class="btn btn-success">Build My Pizza!</button>
-      </form>
-    </div>
-    <div class="container result">
-      <h2>Alright, <span id="name-output"></span>, here's your Pizza:</h2>
-      <h3>Size: <span id="pizza-size-output"></span></h3>
-      <h3>Toppings: <span id="pizza-toppings-output"></span></h3>
-      <img id="result-image" src="https://www.cicis.com/media/1176/pizza_trad_pepperonibeef.png" alt="pizza">
-
-      <h2>Your total:</h2>
-      <h3><span id="final-price"></span></h3>
-      <br>
-      <div class="bottom-buttons">
-        <button class="btn btn-danger"type="button" id="start-over">Start Over</button>
-        <button type="button" id="make-changes" class="btn btn-success">Make Changes</button>
       </div>
+      <br>
+      <div class="panel panel-warning pizza-toppings">
+        <div class="panel-title">
+          <label for="toppings" id="toppings-label">Choose your toppings (50¢ each): </label>
+        </div>
+        <div class="input-align">
+          <div class="">
+            <input type="checkbox" class="toppings" value="extra-cheese">Extra Cheese
+          </div>
+          <div class="">
+            <input type="checkbox" class="toppings" value="pepperoni">Pepperoni
+          </div>
+          <div class="">
+            <input type="checkbox" class="toppings" value="bacon">Bacon
+          </div>
+          <div class="">
+            <input type="checkbox" class="toppings" value="mushrooms">Mushrooms
+          </div>
+          <div class="">
+            <input type="checkbox" class="toppings" value="onions">Onions
+          </div>
+          <div class="">
+            <input type="checkbox" class="toppings" value="green-peppers">Green Peppers
+          </div>
+          <div class="">
+            <input type="checkbox" class="toppings" value="olives">Olives
+          </div>
+        </div>
+      </div>
+      <br>
+      <button type="submit" id="submit" class="btn btn-success">Build My Pizza!</button>
+    </form>
+  </div>
+  <div class="container result">
+    <h2>Alright, <span id="name-output"></span>, here's your Pizza:</h2>
+    <h3>Size: <span id="pizza-size-output"></span></h3>
+    <h3>Toppings: <span id="pizza-toppings-output"></span></h3>
+    <img id="result-image" src="https://www.cicis.com/media/1176/pizza_trad_pepperonibeef.png" alt="pizza">
+
+    <h2>Your total:</h2>
+    <h3><span id="final-price"></span></h3>
+    <br>
+    <div class="bottom-buttons">
+      <button type="button" class="btn btn-success" id="move-forward">This looks good!</button>
+      <button class="btn btn-danger" type="button" id="start-over">Start Over</button>
+      <button type="button" id="make-changes" class="btn btn-warning">Make Changes</button>
     </div>
-  </body>
+  </div>
+  <div class="address-input">
+    
+  </div>
+</body>
 </html>

@@ -8,10 +8,10 @@ function Pizza(pizzaSize, pizzaToppings) {
 }
 
 //make pizza object
-function makePizza(pizzaSize, pizzaToppings){
+function makePizza(pizzaSize, pizzaToppings) {
   var newPizza = new Pizza(pizzaSize, pizzaToppings);
   newPizza.finalPrice = newPizza.price().toFixed(2);
-  switch(newPizza.pizzaSize){
+  switch (newPizza.pizzaSize) {
     case "5":
       newPizza.pizzaSize = "Really Small";
       break;
@@ -37,9 +37,9 @@ Pizza.prototype.price = function(newPizza) {
   return finalPrice;
 };
 
-Pizza.prototype.toppingsList = function(){
+Pizza.prototype.toppingsList = function() {
   var listArray = [];
-  this.pizzaToppings.forEach(function(item){
+  this.pizzaToppings.forEach(function(item) {
     listArray.push(item);
   });
   var listString = listArray.join(", ");
@@ -49,14 +49,14 @@ Pizza.prototype.toppingsList = function(){
 
 
 //UI LOGIC
-$(document).ready(function(){
-  $("form.pizza-form").submit(function(event){
+$(document).ready(function() {
+  $("form.pizza-form").submit(function(event) {
 
     //input
     event.preventDefault();
     var userName = $("input#name").val();
     var pizzaSize = $("#size").val();
-    var pizzaToppings = $(".toppings:checkbox:checked").map(function(){
+    var pizzaToppings = $(".toppings:checkbox:checked").map(function() {
       return $(this).val();
     }).get();
     var pizzaObject = makePizza(pizzaSize, pizzaToppings);
@@ -67,11 +67,11 @@ $(document).ready(function(){
     $("#final-price").text("$" + pizzaObject.finalPrice);
     $("#pizza-size-output").text(pizzaObject.pizzaSize);
     var toppings = pizzaObject.toppingsList();
-      $("#pizza-toppings-output").text(toppings);
-    if(pizzaObject.pizzaToppings.length === 0) {
+    $("#pizza-toppings-output").text(toppings);
+    if (pizzaObject.pizzaToppings.length === 0) {
       $("#pizza-toppings-output").text("None");
     };
-    switch(pizzaObject.pizzaSize){
+    switch (pizzaObject.pizzaSize) {
       case "Really Small":
         $("#result-image").addClass("really-small");
         break;
@@ -88,10 +88,13 @@ $(document).ready(function(){
         $("#result-image").addClass("medium");
         break;
     }
-    $("#start-over").click(function(){
+    $("#move-forward").click(function() {
+      $(".bottom-buttons")
+    });
+    $("#start-over").click(function() {
       location.reload();
     });
-    $("#make-changes").click(function(){
+    $("#make-changes").click(function() {
       $(".input").fadeIn();
       $(".result").hide();
       $("#toppings-list").empty();
