@@ -89,7 +89,7 @@ $(document).ready(function() {
         break;
     }
     $("#move-forward").click(function() {
-      $('html, body').animate({scrollTop:$('.address-input').offset().top}, 1000);
+      $('html, body').animate({scrollTop:$('.delivery-options').offset().top}, 1000);
       $(".bottom-buttons").hide();
     });
     $("#start-over").click(function() {
@@ -102,10 +102,27 @@ $(document).ready(function() {
       $("#result-image").removeClass("really-small small medium big")
     });
     $("#pickup").click(function(){
-
+      $('html, body').animate({scrollTop:$('.jumbotron').offset().top}, 1000);
+      $("#customer-message-2").show();
+      $("#customer-message-1").hide();
+      $(".delivery-options").hide();
+      $("#delivery-option").text("ready for you when you get here!");
     });
     $("#delivery").click(function(){
-
+      $(".address-input").show();
+      $(".delivery-options").hide();
+      $('html, body').animate({scrollTop:$('.address-input').offset().top}, 1000);
+      $(".delivery-options").hide();
+      var street = $(".street").val();
+      var city = $(".city").val();
+      var state = $(".state").val();
+      var zip = $(".zip").val();
     });
+    $(".okay").click(function(){
+      $("#delivery-option").text("on it's way to you as soon as it's cooked!");
+      $("#customer-message-2").show();
+      $("#customer-message-1").hide();
+      $(".delivery-options").hide();
+    })
   });
 });

@@ -67,7 +67,8 @@
     </form>
   </div>
   <div class="container result">
-    <h2>Alright, <span id="name-output"></span>, here's your Pizza:</h2>
+    <h2 id="customer-message-1">Alright, <span id="name-output"></span>, here's your Pizza:</h2>
+    <h2 id="customer-message-2">Thanks for your order! We'll have it <span id="delivery-option"></span></h2>
     <h3>Size: <span id="pizza-size-output"></span></h3>
     <h3>Toppings: <span id="pizza-toppings-output"></span></h3>
     <img id="result-image" src="https://www.cicis.com/media/1176/pizza_trad_pepperonibeef.png" alt="pizza">
@@ -81,8 +82,25 @@
       <button type="button" id="make-changes" class="btn btn-warning">Make Changes</button>
     </div>
   </div>
-  <div class="address-input">
+  <div class="delivery-options">
     <h2>Is this for <button type="button" class="btn btn-info" id="pickup">Pickup</button> or <button type="button" class="btn btn-info" id="delivery">Delivery</button> ?</h2>
+  </div>
+  <div class="address-input">
+    <form class="">
+      <div class="address-input">
+        <label for="address">Address:</label>
+        <input type="text" name="street">Street
+        <br>
+        <input type="text" name="city">City
+        <br>
+        <input type="text" name="state">State
+        <br>
+        <input type="number" name="zip">Zip Code
+        <br>
+        <br>
+        <button type="submit" name="button" class="btn btn-success okay">Okay!</button>
+      </div>
+    </form>
   </div>
 </body>
 
