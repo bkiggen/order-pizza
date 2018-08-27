@@ -91,13 +91,15 @@ input[type="checkbox"] {
 
 .address-input {
   width: 40%;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 800px auto;
   background-color: #dba24a;
   text-align: left;
   border-radius: 5px;
   display: none;
-  margin-top: 800px;
+}
+
+.delivery-options {
+  display: none;
 }
 
 @media screen and (max-width: 530px){

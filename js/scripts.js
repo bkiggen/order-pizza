@@ -89,8 +89,9 @@ $(document).ready(function() {
         break;
     }
     $("#move-forward").click(function() {
-      $('html, body').animate({scrollTop:$('.delivery-options').offset().top}, 1000);
+      $(".delivery-options").show();
       $(".bottom-buttons").hide();
+      $('html, body').animate({scrollTop:$('.delivery-options').offset().top}, 1000);
     });
     $("#start-over").click(function() {
       location.reload();
@@ -109,20 +110,21 @@ $(document).ready(function() {
       $("#delivery-option").text("ready for you when you get here!");
     });
     $("#delivery").click(function(){
-      $(".address-input").show();
+      $(".address-input").fadeIn();
       $(".delivery-options").hide();
-      $('html, body').animate({scrollTop:$('.address-input').offset().top}, 1000);
       $(".delivery-options").hide();
       var street = $(".street").val();
       var city = $(".city").val();
       var state = $(".state").val();
       var zip = $(".zip").val();
+      $('html, body').animate({scrollTop:$('.address-input').offset().top}, 1000);
     });
     $(".okay").click(function(){
       $("#delivery-option").text("on it's way to you as soon as it's cooked!");
       $("#customer-message-2").show();
       $("#customer-message-1").hide();
       $(".delivery-options").hide();
+      $('html, body').animate({scrollTop:$('.jumbotron').offset().top}, 1000);
     })
   });
 });
